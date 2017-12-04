@@ -26,37 +26,27 @@ Using the SQL Database file given to you as the source of data to answer the que
 
   SELECT "name", "price" FROM shows ORDER BY "price";
 
-  name                   | price
------------------------------------------+-------
-Two girls, one cup of comedy            |  6.00
-Best of Burlesque                       |  7.99
-Two become One                          |  8.50
-Urinetown                               |  8.50
-Paul Dabek Mischief                     | 12.99
-Le Haggis                               | 12.99
-Joe Stilgoe: Songs on Film – The Sequel | 16.50
-Game of Thrones - The Musical           | 16.50
-Shitfaced Shakespeare                   | 16.50
-Aaabeduation – A Magic Show             | 17.99
-Camille O'Sullivan                      | 17.99
-Balletronics                            | 32.00
-Edinburgh Royal Tattoo                  | 32.99
+  2. Select the average price of all shows.
 
-  10. Select the average price of all shows.
+  SELECT AVG("price") FROM shows;
 
-  11. Select the price of the least expensive show.
+  3. Select the price of the least expensive show.
 
-  12. Select the sum of the price of all shows.
+  SELECT MIN("price") FROM shows;
 
-  13. Select the sum of the price of all shows whose prices is less than £20.
+  4. Select the sum of the price of all shows.
 
-  14. Select the name and price of the most expensive show.
+  SELECT SUM("price") FROM shows;
 
-  15. Select the name and price of the second from cheapest show.
+  5. Select the sum of the price of all shows whose prices is less than £20.
 
-  16. Select the names of all users whose names start with the letter "M".
+  6. Select the name and price of the most expensive show.
 
-  17. Select the names of users whose names contain "er".
+  7. Select the name and price of the second from cheapest show.
+
+  8. Select the names of all users whose names start with the letter "M".
+
+  9. Select the names of users whose names contain "er".
 
 
 ## Section 2
